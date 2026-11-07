@@ -1,0 +1,30 @@
+action_type_id,name,target_id,target_label,cost_usd,ev_usd,notes
+A-WAYFINDING,Wayfinding and signage refresh for a zone,Z-B40,Back Forty,7500.0,11391.01908794967,Close 8% of theo/hr gap vs fleet median $18.15 over 20 days after lead. 5% capture is the kill line.
+A-MOVE-MACHINE,Relocate one machine,M-1086,M-1086 @ Z-PIT,1800.0,1908.4854988287475,Close 40% of location theo gap; move experiment shrunk Δtheo/hr=2.034 (n=4)
+A-MOVE-MACHINE,Relocate one machine,M-1139,M-1139 @ Z-PIT,1800.0,1882.1459417116616,Close 40% of location theo gap; move experiment shrunk Δtheo/hr=2.034 (n=4)
+A-MOVE-MACHINE,Relocate one machine,M-1064,M-1064 @ Z-PIT,1800.0,1862.4654073309423,Close 40% of location theo gap; move experiment shrunk Δtheo/hr=2.034 (n=4)
+A-MOVE-MACHINE,Relocate one machine,M-1155,M-1155 @ Z-PIT,1800.0,1823.68935309676,Close 40% of location theo gap; move experiment shrunk Δtheo/hr=2.034 (n=4)
+A-MOVE-MACHINE,Relocate one machine,M-1056,M-1056 @ Z-PIT,1800.0,1794.5143558079544,Close 40% of location theo gap; move experiment shrunk Δtheo/hr=2.034 (n=4)
+A-MOVE-MACHINE,Relocate one machine,M-1298,M-1298 @ Z-PIT,1800.0,1714.0856061201705,Close 40% of location theo gap; move experiment shrunk Δtheo/hr=2.034 (n=4)
+A-MOVE-MACHINE,Relocate one machine,M-1015,M-1015 @ Z-PIT,1800.0,1705.427905011059,Close 40% of location theo gap; move experiment shrunk Δtheo/hr=2.034 (n=4)
+A-MOVE-MACHINE,Relocate one machine,M-1262,M-1262 @ Z-ENT,1800.0,1676.4094701146196,Close 40% of location theo gap; move experiment shrunk Δtheo/hr=2.034 (n=4)
+A-MOVE-MACHINE,Relocate one machine,M-1190,M-1190 @ Z-ENT,1800.0,1633.0796702651564,Close 40% of location theo gap; move experiment shrunk Δtheo/hr=2.034 (n=4)
+A-MOVE-MACHINE,Relocate one machine,M-1124,M-1124 @ Z-ENT,1800.0,1624.3669148442073,Close 40% of location theo gap; move experiment shrunk Δtheo/hr=2.034 (n=4)
+A-MOVE-MACHINE,Relocate one machine,M-1300,M-1300 @ Z-ENT,1800.0,1602.687850712622,Close 40% of location theo gap; move experiment shrunk Δtheo/hr=2.034 (n=4)
+A-MOVE-MACHINE,Relocate one machine,M-1274,M-1274 @ Z-HTL,1800.0,1569.9904975106322,Close 40% of location theo gap; move experiment shrunk Δtheo/hr=2.034 (n=4)
+A-MOVE-MACHINE,Relocate one machine,M-1255,M-1255 @ Z-HTL,1800.0,1532.0664458025283,Close 40% of location theo gap; move experiment shrunk Δtheo/hr=2.034 (n=4)
+A-MOVE-MACHINE,Relocate one machine,M-1050,M-1050 @ Z-BAR,1800.0,1489.150190420184,Close 40% of location theo gap; move experiment shrunk Δtheo/hr=2.034 (n=4)
+A-MOVE-MACHINE,Relocate one machine,M-1107,M-1107 @ Z-HTL,1800.0,1480.9444383807117,Close 40% of location theo gap; move experiment shrunk Δtheo/hr=2.034 (n=4)
+A-MOVE-MACHINE,Relocate one machine,M-1173,M-1173 @ Z-BAR,1800.0,1459.395713556478,Close 40% of location theo gap; move experiment shrunk Δtheo/hr=2.034 (n=4)
+A-MOVE-MACHINE,Relocate one machine,M-1084,M-1084 @ Z-HTL,1800.0,1458.473242118516,Close 40% of location theo gap; move experiment shrunk Δtheo/hr=2.034 (n=4)
+A-MOVE-MACHINE,Relocate one machine,M-1081,M-1081 @ Z-ENT,1800.0,1448.7582853769097,Close 40% of location theo gap; move experiment shrunk Δtheo/hr=2.034 (n=4)
+A-MOVE-MACHINE,Relocate one machine,M-1272,M-1272 @ Z-ENT,1800.0,1448.2590310050437,Close 40% of location theo gap; move experiment shrunk Δtheo/hr=2.034 (n=4)
+A-MOVE-MACHINE,Relocate one machine,M-1126,M-1126 @ Z-BAR,1800.0,1426.850072115341,Close 40% of location theo gap; move experiment shrunk Δtheo/hr=2.034 (n=4)
+A-MOVE-MACHINE,Relocate one machine,M-1239,M-1239 @ Z-BAR,1800.0,1380.9218823143735,Close 40% of location theo gap; move experiment shrunk Δtheo/hr=2.034 (n=4)
+A-MOVE-MACHINE,Relocate one machine,M-1240,M-1240 @ Z-BAR,1800.0,1342.826859206622,Close 40% of location theo gap; move experiment shrunk Δtheo/hr=2.034 (n=4)
+A-MOVE-MACHINE,Relocate one machine,M-1265,M-1265 @ Z-B40,1800.0,1266.4874424658185,Close 40% of location theo gap; move experiment shrunk Δtheo/hr=2.034 (n=4)
+A-MOVE-MACHINE,Relocate one machine,M-1181,M-1181 @ Z-B40,1800.0,1256.0604681108982,Close 40% of location theo gap; move experiment shrunk Δtheo/hr=2.034 (n=4)
+A-TECH-SHIFT,Add one technician to a shift for 30 days,tech-1,Additional technician #1,11520.0,6281.142311724575,Recover 35% of $499/day lost-theo + MTTR cut on 6.7 faults/day over 23d. From 1207 fault repairs.
+A-TECH-SHIFT,Add one technician to a shift for 30 days,tech-2,Additional technician #2,11520.0,4082.742502620974,Recover 35% of $499/day lost-theo + MTTR cut on 6.7 faults/day over 23d. From 1207 fault repairs.
+A-TECH-SHIFT,Add one technician to a shift for 30 days,tech-3,Additional technician #3,11520.0,2512.45692468983,Recover 35% of $499/day lost-theo + MTTR cut on 6.7 faults/day over 23d. From 1207 fault repairs.
+A-WAYFINDING,Wayfinding and signage refresh for a zone,Z-HL,High-Limit Room,7500.0,1391.9141120189038,Close 8% of theo/hr gap vs fleet median $18.15 over 20 days after lead. 5% capture is the kill line.

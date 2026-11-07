@@ -1,0 +1,110 @@
+{
+  "n_machines": 310,
+  "cause_counts": {
+    "performing": 182,
+    "location": 50,
+    "leak": 36,
+    "mix": 22,
+    "luck": 20
+  },
+  "total_lost_theo_usd": 90313.3772706704,
+  "total_downtime_hours": 5021.0788888888865,
+  "move_experiment": {
+    "n_moves": 4,
+    "usable": true,
+    "shrunk_delta_theo_per_hr": 2.0336066924535112,
+    "note": "4 placement changes with 14d pre/post windows; shrunk EV=2.034 theo$/hr."
+  },
+  "repair_experiment": {
+    "n_faults": 1207,
+    "total_lost_theo_usd": 88346.7166822718,
+    "daily_lost_theo_rate": 488.10340708437457,
+    "note": "1207 fault repairs; estimated lost theo $88,347 (~$488/day). Tech/PM EV = recovery_rate \u00d7 rate \u00d7 operating days."
+  },
+  "forecast": {
+    "mae_baseline": 218258.0969262295,
+    "mae_weekday": 68698.55169827497,
+    "weekend_lift": 358881.33964052284,
+    "favor_promo": false,
+    "decision": "Weekday model beats the constant mean (MAE $68,699 vs $218,258). Adding announced events makes holdout MAE worse ($68,738), so events do not earn a promo. Weekends already run ~$358,881 more coin-in per day. Staff to that pattern.",
+    "weekday_means": {
+      "Fri": 1655737.2029411765,
+      "Mon": 1212138.3205882353,
+      "Sat": 1820595.1852941175,
+      "Sun": 1465879.0823529414,
+      "Thu": 1290980.4529411765,
+      "Tue": 1112941.95,
+      "Wed": 1149981.0444444446
+    },
+    "baseline_mean": 1384919.0508333333
+  },
+  "finding": {
+    "naive_in_back_forty": 9,
+    "naive_ids": [
+      "M-5076",
+      "M-1158",
+      "M-1120",
+      "M-1118",
+      "M-1238",
+      "M-1181",
+      "M-1035",
+      "M-1179",
+      "M-1017",
+      "M-1265"
+    ],
+    "naive_availability": 0.9970026441955999,
+    "back_forty_machines": 48,
+    "back_forty_theo_hr": 11.955182034451981,
+    "fleet_theo_hr": 18.15403861205343,
+    "entrance_theo_hr": 21.694059929373722,
+    "hours_per_day": 23.92598041818162,
+    "operating_days": 20,
+    "gap_theo_hr": 6.198856577601449,
+    "wayfinding_cost": 7500.0,
+    "base_capture": 0.08,
+    "base_ev": 11390.4937797741,
+    "base_npv": 3890.4937797741004,
+    "kill_capture": 0.05,
+    "kill_ev": 7119.058612358814,
+    "kill_npv": -380.94138764118634,
+    "upside_15_ev": 21357.17583707644,
+    "m1158_luck": -36164.75,
+    "m1158_theo_hr": 11.972621258891879,
+    "m1158_zone_theo_hr": 11.955182034451981,
+    "ridgeline_faults_per_machine": 7.23404255319149,
+    "halcyon_faults_per_machine": 1.9304347826086956,
+    "replace_trap_cost": 88000.0,
+    "short_tenure_in_bottom10": 3
+  },
+  "recommended": {
+    "action_types": [
+      "A-WAYFINDING"
+    ],
+    "total_cost": 7500.0,
+    "total_ev": 11390.4937797741,
+    "roi": 1.51873250396988,
+    "n_items": 1,
+    "unspent": 92500.0
+  },
+  "search_hold_note": "Best base NPV is $4,168 on ['A-MOVE-MACHINE', 'A-WAYFINDING'], but at \u221250% EV NPV \u2264 0 \u2192 recommend A-HOLD (valid under GUIDE luck/uncertainty rule).",
+  "best_raw": {
+    "action_types": [
+      "A-MOVE-MACHINE",
+      "A-WAYFINDING"
+    ],
+    "total_cost": 14700.0,
+    "total_ev": 18867.80528891778,
+    "npv": 4167.805288917782
+  },
+  "optional_spend": {
+    "action_types": [
+      "A-MOVE-MACHINE",
+      "A-TECH-SHIFT",
+      "A-WAYFINDING"
+    ],
+    "total_cost": 92760.0,
+    "total_ev": 63446.81748123192,
+    "npv": -29313.18251876808
+  },
+  "stress_note": "Best base NPV is $4,168 on ['A-MOVE-MACHINE', 'A-WAYFINDING'], but at \u221250% EV NPV \u2264 0 \u2192 recommend A-HOLD (valid under GUIDE luck/uncertainty rule)."
+}

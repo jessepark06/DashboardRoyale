@@ -1,0 +1,4 @@
+action_type_id,name,quantity,cost_usd,ev_usd
+A-MOVE-MACHINE,Relocate one machine,24,43200.0,37787.54254222796
+A-TECH-SHIFT,Add one technician to a shift for 30 days,3,34560.0,12876.341739035379
+A-WAYFINDING,Wayfinding and signage refresh for a zone,2,15000.0,12782.933199968573

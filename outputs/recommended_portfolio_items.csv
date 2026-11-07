@@ -1,0 +1,2 @@
+action_type_id,name,target_id,target_label,cost_usd,ev_usd,notes
+A-WAYFINDING,Wayfinding and signage refresh for a zone,Z-B40,Back Forty,7500.0,11390.4937797741,Only action aimed at the diagnosed cause. Assumes signs close 8% of the $6.20/hr theo gap vs the fleet over 20 days. Kill if realized lift is under 5%.
