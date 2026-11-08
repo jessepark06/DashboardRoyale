@@ -2,10 +2,10 @@
 
 The GM's bottom 10 by house win are not broken machines. Nine of the ten sit in Back Forty, and that group was available 99.7% of scheduled hours. Replacing them spends capital on a quiet corner. M-1158 shows the trap: house win trailed theo by $36,165, while theo per hour matched its zone. That is luck.
 
-Back Forty earns $11.96 theo per available hour against a fleet median of $18.15. The same game titles earn more in Main Entrance and Center Pit, so the gap is the place, not the paytable. Royal Draw's 95% RTP makes dollar win look worse even when the game is behaving. Ridgeline machines fault more often than Halcyon (7.2 vs 1.9 per machine), but six months of lost theo is too small to repay a July technician after lead time.
+Back Forty earns $11.96 theo per available hour against a fleet median of $18.15. The same titles earn more in Center Pit ($22.97) and at the Main Entrance ($21.69), so the gap is the place, not the paytable. Royal Draw's 95% RTP makes dollar win look worse even when the game is behaving. Downtime cost about $88,347 of theo. Ridgeline machines fault more often than Halcyon (7.2 vs 1.9 per machine), but a July technician is assumed to recover 35% of that daily rate and does not cover its $11,520 cost after a 7-day lead. Four past moves gained about $2 of theo per hour, too small a sample to fund a relocation.
 
-A weekday-mean forecast of floor coin-in, trained January–April and tested May–June, cuts MAE from $218,258 to $68,699. Weekends already carry about $358,881 more coin-in a day. Staff to that pattern. Do not buy a promotion to invent it.
+A weekday-mean forecast of floor coin-in, trained January–April and tested May–June, cuts mean absolute error from $218,258 to $68,699. Adding announced events makes the holdout slightly worse ($68,738). Weekends already carry about $358,881 more coin-in a day. Schedule staff to that weekday pattern. Do not buy a promotion to invent it.
 
-**Recommendation.** One action: wayfinding for Back Forty, $7,500, about $11,390 expected theo if signs close 8% of the zone gap over the 20 days after lead time. Hold the other $92,500. If the zone closes less than 5% of the gap versus Main Entrance and Center Pit, stop. Do not replace the bottom 10.
+Carded play is concentrated: the top 10% of carded players are 67% of carded coin-in. Loyalty comps are about 1% of theo and are already in the books once.
 
-AI disclosure: Cursor helped write the pipeline and dashboard. Figures come from `analysis/run_pipeline.py`.
+Recommendation. One action: wayfinding for Back Forty, $7,500, with a 10-day lead. An 8% capture of the zone gap is an assumption. Over the 20 days after the signs are up, expected theo is about $11,390. Hold the other $92,500. Measure Back Forty theo per available hour against Main Entrance and Center Pit on matched weekdays. If the zone closes less than 5% of the gap, stop. Do not replace the bottom 10.

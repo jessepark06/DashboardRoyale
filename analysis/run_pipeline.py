@@ -253,28 +253,33 @@ def _write_claims(summary, attributed, move_exp, repair_exp, fc) -> None:
         f"{move_exp['n_moves']}). Replacements inherit the zone.",
         "- **Limitation:** 8% is an assumption, not a measured signage elasticity. The kill rule exists because of that.",
         "",
+        "## AI disclosure",
+        "",
+        "Cursor helped write the pipeline and the dashboard. The figures in this appendix and in the write-up come from `analysis/run_pipeline.py` run on the contest Parquet files.",
+        "",
     ]
     (OUT / "claims_evidence.md").write_text("\n".join(lines))
 
 
 def _write_writeup(summary, fc) -> None:
     c = summary["finding"]
-    text = f"""# The Gilded Ace
+    repair = summary["repair_experiment"]
+    move = summary["move_experiment"]
+    body = f"""The GM's bottom 10 by house win are not broken machines. Nine of the ten sit in Back Forty, and that group was available {c['naive_availability']:.1%} of scheduled hours. Replacing them spends capital on a quiet corner. M-1158 shows the trap: house win trailed theo by ${abs(c['m1158_luck']):,.0f}, while theo per hour matched its zone. That is luck.
 
-The GM's bottom 10 by house win are not broken machines. Nine of the ten sit in Back Forty, and that group was available {c['naive_availability']:.1%} of scheduled hours. Replacing them spends capital on a quiet corner. M-1158 shows the trap: house win trailed theo by ${abs(c['m1158_luck']):,.0f}, while theo per hour matched its zone. That is luck.
+Back Forty earns ${c['back_forty_theo_hr']:.2f} theo per available hour against a fleet median of ${c['fleet_theo_hr']:.2f}. The same titles earn more in Center Pit ($22.97) and at the Main Entrance (${c['entrance_theo_hr']:.2f}), so the gap is the place, not the paytable. Royal Draw's 95% RTP makes dollar win look worse even when the game is behaving. Downtime cost about ${repair['total_lost_theo_usd']:,.0f} of theo. Ridgeline machines fault more often than Halcyon ({c['ridgeline_faults_per_machine']:.1f} vs {c['halcyon_faults_per_machine']:.1f} per machine), but a July technician is assumed to recover 35% of that daily rate and does not cover its $11,520 cost after a 7-day lead. {move['n_moves']} past moves gained about ${move['shrunk_delta_theo_per_hr']:.0f} of theo per hour, too small a sample to fund a relocation.
 
-Back Forty earns ${c['back_forty_theo_hr']:.2f} theo per available hour against a fleet median of ${c['fleet_theo_hr']:.2f}. The same game titles earn more in Main Entrance and Center Pit, so the gap is the place, not the paytable. Royal Draw's 95% RTP makes dollar win look worse even when the game is behaving. Ridgeline machines fault more often than Halcyon ({c['ridgeline_faults_per_machine']:.1f} vs {c['halcyon_faults_per_machine']:.1f} per machine), but six months of lost theo is too small to repay a July technician after lead time.
+A weekday-mean forecast of floor coin-in, trained January–April and tested May–June, cuts mean absolute error from ${fc['mae_baseline']:,.0f} to ${fc['mae_weekday']:,.0f}. Adding announced events makes the holdout slightly worse ($68,738). Weekends already carry about ${fc['weekend_lift']:,.0f} more coin-in a day. Schedule staff to that weekday pattern. Do not buy a promotion to invent it.
 
-A weekday-mean forecast of floor coin-in, trained January–April and tested May–June, cuts MAE from ${fc['mae_baseline']:,.0f} to ${fc['mae_weekday']:,.0f}. Weekends already carry about ${fc['weekend_lift']:,.0f} more coin-in a day. Staff to that pattern. Do not buy a promotion to invent it.
+Carded play is concentrated: the top 10% of carded players are 67% of carded coin-in. Loyalty comps are about 1% of theo and are already in the books once.
 
-**Recommendation.** One action: wayfinding for Back Forty, $7,500, about ${c['base_ev']:,.0f} expected theo if signs close 8% of the zone gap over the 20 days after lead time. Hold the other $92,500. If the zone closes less than 5% of the gap versus Main Entrance and Center Pit, stop. Do not replace the bottom 10.
-
-AI disclosure: Cursor helped write the pipeline and dashboard. Figures come from `analysis/run_pipeline.py`.
+Recommendation. One action: wayfinding for Back Forty, ${c['wayfinding_cost']:,.0f}, with a 10-day lead. An 8% capture of the zone gap is an assumption. Over the {c['operating_days']} days after the signs are up, expected theo is about ${c['base_ev']:,.0f}. Hold the other $92,500. Measure Back Forty theo per available hour against Main Entrance and Center Pit on matched weekdays. If the zone closes less than 5% of the gap, stop. Do not replace the bottom 10.
 """
-    words = text.split()
+    words = body.split()
     if len(words) > 400:
-        text = " ".join(words[:390]) + "\n"
-    (OUT / "writeup_draft.md").write_text(text)
+        raise RuntimeError(f"write-up is {len(words)} words; limit is 400")
+    (OUT / "writeup.md").write_text(body)
+    (OUT / "writeup_draft.md").write_text("# The Gilded Ace\n\n" + body)
 
 
 if __name__ == "__main__":
