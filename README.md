@@ -1,5 +1,18 @@
 # Dashboard Royale
 
+## Submission: how to open this solution
+
+The decision and the dashboard are documented in [README_SOLUTION.md](README_SOLUTION.md). The Devpost write-up is [outputs/writeup.md](outputs/writeup.md). Claims, evidence, and the AI disclosure are in [outputs/claims_evidence.md](outputs/claims_evidence.md).
+
+```sh
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+streamlit run app/streamlit_app.py
+```
+
+---
+
 ## Luck, Location, or a Leak?
 
 > Management is about to replace the ten machines that earned the least. Your dashboard could stop an expensive mistake—or show that management is right.

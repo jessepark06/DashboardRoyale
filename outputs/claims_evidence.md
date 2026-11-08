@@ -35,3 +35,7 @@
 - **Result:** cost $7,500, EV $11,390, NPV $3,890. At 5% capture NPV is $-381.
 - **Alternative tested:** move machines or replace them. Moves lack sample (n=4). Replacements inherit the zone.
 - **Limitation:** 8% is an assumption, not a measured signage elasticity. The kill rule exists because of that.
+
+## AI disclosure
+
+Cursor helped write the pipeline and the dashboard. The figures in this appendix and in the write-up come from `analysis/run_pipeline.py` run on the contest Parquet files.
